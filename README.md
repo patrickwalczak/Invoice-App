@@ -10,6 +10,7 @@ This is a useful tool to manage invoices. There are possibilities to add, edit, 
 
 In the near future, I will try to:
 
+- add documentation,
 - organize whole architecture based on the Model–view–controller software design pattern, because right now I have one big file and division into smaller modules will be so much better to add new features,
 - optimize code, because sometimes my solutions to specific problem are too complicated and some functions can be written with less code,
 - add some functionalities such as change theme button, add third invoice type that will be draft, add some start/welcome page, disabled possibility to edit some information in the invoice which was paid.

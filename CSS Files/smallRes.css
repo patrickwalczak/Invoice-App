@@ -1,0 +1,296 @@
+@media all and (max-width: 559.9px) {
+  body {
+    font-size: 0.8rem;
+    font-weight: 400;
+    overflow-y: scroll;
+  }
+
+  .menu__bar {
+    min-height: 4rem;
+    height: 4rem;
+  }
+
+  .form {
+    padding: 3rem 2.5rem;
+    min-width: 53rem;
+    z-index: 10;
+  }
+
+  .square {
+    width: 3.5rem;
+    min-width: 3.5rem;
+    height: 100%;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .titleUnderLogo {
+    display: none;
+  }
+
+  .logo_img {
+    top: 35%;
+    right: 5%;
+    width: 63%;
+  }
+
+  .imga_cont {
+    right: 11%;
+    bottom: 0%;
+  }
+
+  .image {
+    bottom: 28%;
+    right: 3%;
+    width: 5.5%;
+  }
+
+  .main__section {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 2rem;
+    height: 100vh;
+    min-width: 40rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .brightness_img {
+    display: none;
+    bottom: 30%;
+    right: 23%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .invoice__counter__button_index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+  }
+
+  .filter {
+    font-size: 0.9rem;
+  }
+
+  .how_many_invoices {
+    font-size: 0.9rem;
+  }
+
+  .invoices__bars {
+    margin-top: 2rem;
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+  }
+
+  .invoice__row {
+    width: 100%;
+    height: 6.5vh;
+    margin-bottom: 1.2rem;
+  }
+
+  .invoice__status {
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .invoice__status.paid {
+    padding: 0.5rem 0.1rem;
+    min-width: 7rem;
+    height: 60%;
+    margin-top: 0.3rem;
+  }
+
+  .invoice__status.pending {
+    padding: 0.5rem 0.1rem;
+    min-width: 7rem;
+    height: 60%;
+    margin-top: 0.3rem;
+  }
+
+  .img_near_row {
+    right: -26.5%;
+  }
+
+  /* Details */
+
+  .main__section_detail {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .invoice__counter__button {
+    height: 5rem;
+  }
+
+  .invoice__counter__button > p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 0.2rem;
+  }
+
+  .btn_edit,
+  .btn_delete,
+  .btn_mark {
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .btn_delete {
+    width: 6rem;
+    margin-right: 0.2rem;
+    border-radius: 3rem;
+  }
+
+  .btn_mark {
+    width: 9rem;
+    margin-right: 0.2rem;
+    border-radius: 3rem;
+  }
+
+  .btn_edit {
+    width: 5rem;
+    margin-right: 0.2rem;
+    border-radius: 3rem;
+  }
+
+  .invoice_data {
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .back_button {
+    position: absolute;
+    background-color: #40005e;
+    outline: none;
+    border: none;
+    top: -7%;
+    left: -5%;
+    cursor: pointer;
+    color: rgb(192, 192, 192);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  /* ==================================== */
+
+  /* First column */
+
+  .status_button,
+  .clientNameContainer {
+    margin-right: 1rem;
+  }
+
+  .clientNameContainer > p {
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  .clientNameContainer {
+    margin-left: 0rem;
+  }
+
+  .invoice__status__button {
+    margin-top: 0rem;
+  }
+
+  .containerStatusBtn_ClientName {
+    min-height: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .status_button {
+    width: 20rem;
+  }
+
+  .clientNameContainer {
+    width: 10rem;
+  }
+
+  .containerStatusBtn_ClientName > div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  /* Second column (due to, client mail) */
+
+  .paymentTermConta,
+  .clientMailContainer {
+    width: 21rem;
+    min-width: 10rem;
+  }
+
+  .cl_mail_value {
+    width: 90%;
+    word-wrap: break-word;
+  }
+
+  .due_to_value {
+    margin-top: 1rem;
+  }
+
+  .container_PaymentTerm_ClientMail {
+    min-height: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container_PaymentTerm_ClientMail > div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  /* Third column (addresses) */
+
+  .userAddress,
+  .clientAddressContainer {
+    min-width: 1rem;
+    width: 21rem;
+  }
+
+  .userAddress > p,
+  .clientAddressContainer > p {
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  .container_UserAddress_ClientAddress > div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .container_UserAddress_ClientAddress {
+    display: flex;
+    flex-direction: row;
+    min-height: 1rem;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .invoice__counter__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+  }
+
+  .invoice__counter__button > p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 0rem;
+  }
+}

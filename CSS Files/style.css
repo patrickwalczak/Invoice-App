@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Pacifico', cursive;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-weight: 400;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  /* background-color: rgb(11, 11, 49); */
+  /* background-color without blue light filtr */
+  background-color: rgb(20, 22, 37);
+}
+
+.menu__bar {
+  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
+  /* background-color: rgb(24, 24, 87); */
+  background-color: rgba(31, 34, 109, 0.267);
+  min-height: 100vh;
+  position: relative;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.square {
+  position: absolute;
+  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
+  height: 10rem;
+
+  background-image: linear-gradient(
+    to bottom,
+    #4e0081 0%,
+    #40005e 50%,
+    #ae3ee2dc 100%
+  );
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.titleUnderLogo {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 900;
+
+  color: rgb(20, 22, 37);
+  text-align: center;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.1rem;
+  font-size: 1rem;
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  cursor: default;
+}
+
+.titleUnderLogo::first-letter {
+  font-size: 1.3rem;
+}
+
+.logo_img {
+  position: absolute;
+  top: 25%;
+  right: -2%;
+  transform: translate(-25%, -25%);
+  width: 70%;
+}
+
+.imga_cont {
+  position: absolute;
+  width: inherit;
+  height: 3px;
+  background-color: rgba(43, 43, 92, 0.192);
+  bottom: 16.5%;
+  border: 0.1px rgba(59, 59, 59, 0.048) solid;
+}
+
+.image {
+  position: absolute;
+  bottom: 3%;
+  right: 20%;
+  border-radius: 35px;
+}
+
+.main__section {
+  padding-left: 10rem;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  width: 100%;
+  max-width: 100rem;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  font-size: 3.3rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(181, 75, 223) 0%,
+    rgb(135, 82, 160) 30%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  cursor: default;
+}
+
+.brightness_img {
+  position: absolute;
+  bottom: 20%;
+  right: 40%;
+  width: 25px;
+  height: 25px;
+  transition: 1000ms ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+.brightness_img:hover {
+  transform: scale(1.05) rotate(90deg);
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  cursor: pointer;
+  width: 65px;
+  transition: 500ms ease-in-out;
+}
+
+.invoice__counter__button_index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.filter {
+  align-self: center;
+  justify-self: right;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+
+.filter::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 80%;
+  left: 0.45rem;
+  right: 0;
+  top: 35px;
+  background-color: #4e0081;
+  border-radius: 4.5px;
+  opacity: 0;
+  transition: 400ms ease-in-out;
+}
+
+.filter:hover::before {
+  opacity: 1;
+}
+
+.arrow {
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  font-weight: 600;
+  color: #4e0081;
+  font-size: 1.8rem;
+  padding-top: 2px;
+  transition: 400ms;
+  font-weight: bold;
+  position: relative;
+  top: 1px;
+  right: -3px;
+}
+
+.down {
+  transform: rotate(90deg) translateX(4px) translateY(-4px);
+}
+
+.block_below_filter {
+  position: absolute;
+  margin-top: 0.33rem;
+  width: 90%;
+}
+
+.block_below_filter > div {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #4e0081;
+  border: 1px rgba(0, 0, 0, 0.582) solid;
+}
+
+.block_below_filter > div:hover {
+  background-color: #41005f;
+  transform: scale(1.02);
+}
+
+.button__add {
+  display: none;
+  align-self: center;
+  justify-self: right;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(20, 22, 37);
+  width: 12rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 3px solid #4e0081;
+  box-shadow: 0px 0px 12px #4d0081b6;
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+
+.button__add:hover {
+  box-shadow: none;
+}
+
+.button__add > .p {
+  transition: 400ms ease-in-out;
+  width: 100%;
+  color: white;
+}
+
+.button__add:hover > .p {
+  color: transparent;
+}
+
+.dotX {
+  color: #7900ca;
+  font-size: 3rem;
+  font-weight: 100;
+  transition: 500ms ease-in-out;
+  margin-right: 0.5rem;
+}
+
+.button__add:hover > .dotX {
+  transform: translateX(-4rem) translateY(0.5rem) rotate(180deg);
+  font-size: 5rem;
+}
+
+.how_many_invoices {
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+.plus_inside_dot_center {
+  position: fixed;
+  color: #4e0081;
+  font-size: 6rem;
+  top: 44%;
+  right: 49.5%;
+  font-weight: 100;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.plus_inside_dot_center:hover {
+  font-size: 5rem;
+  top: 45.5%;
+  right: 49.7%;
+}
+
+.center_text {
+  position: fixed;
+  font-weight: 600;
+  right: 45%;
+  top: 43%;
+  color: rgba(107, 107, 107, 0.767);
+}
+
+.invoices__bars {
+  margin-top: 2rem;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.invoices__bars::-webkit-scrollbar {
+  width: 0;
+}
+
+.invoice__row {
+  height: 8vh;
+  background-color: rgba(31, 34, 109, 0.267);
+  border-radius: 0.5rem;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.invoice__row:hover {
+  background-color: rgba(31, 34, 109, 0.397);
+}
+
+.invoice__status {
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.invoice__status.paid {
+  color: rgba(0, 209, 45, 0.767);
+  background-color: rgba(9, 99, 57, 0.548);
+  min-width: 8.2rem;
+  width: 8.2rem;
+  max-width: 8.2rem;
+  padding: 0.5rem 0rem;
+  margin-right: 1rem;
+}
+
+.invoice__status.pending {
+  color: rgb(214, 119, 11);
+  background-color: rgba(102, 64, 15, 0.521);
+  padding: 0.5rem 0rem;
+  margin-right: 1rem;
+  min-width: 8.2rem;
+  width: 8.2rem;
+  max-width: 8.2rem;
+}
+
+.invoice__status.pending > .dot {
+  background-color: rgb(214, 119, 11);
+}
+
+.invoice__status__button {
+  display: flex;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: rgba(0, 209, 45, 0.651);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0.1rem;
+  margin-right: 0.3rem;
+}
+
+.invoice__row > div:not(:first-child) {
+  text-align: right;
+  width: 12rem;
+}
+
+.invoice__row > div:first-child {
+  width: 4rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.invoice__row:hover > .img_near_row {
+  opacity: 1;
+}
+
+.loadData {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  cursor: pointer;
+  height: 4rem;
+  border-radius: 1rem;
+  width: 12rem;
+  color: white;
+  background-color: inherit;
+  border: 3px #40005e solid;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: 300ms ease-in-out;
+}
+
+.loadData:hover {
+  background-color: #40005e;
+}

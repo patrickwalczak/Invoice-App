@@ -1,0 +1,372 @@
+/* Style for invoice details section */
+
+.main__section_detail {
+  padding-left: 15rem;
+  padding-right: 5rem;
+  margin-top: 6rem;
+  width: 170vh;
+}
+
+.invoice__counter__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem;
+  margin-bottom: 5rem;
+  background-color: rgba(31, 34, 109, 0.267);
+  border-radius: 0.7rem;
+  height: 6rem;
+}
+
+.invoice__counter__button > p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.btn_res:hover {
+  transform: scale(1.05);
+}
+
+.btn_edit,
+.btn_delete,
+.btn_mark {
+  border: none;
+  color: rgb(206, 201, 201);
+  cursor: pointer;
+  height: 3.5rem;
+  text-align: center;
+}
+
+.btn_delete {
+  background-color: rgba(255, 102, 0, 0.705);
+  width: 8rem;
+  margin-right: 0.5rem;
+  border-radius: 3rem;
+}
+
+.btn_mark {
+  background-color: #40005e;
+  width: 12rem;
+  margin-right: 0.5rem;
+  border-radius: 3rem;
+}
+
+.btn_edit {
+  background-color: rgb(8, 8, 26);
+  width: 7rem;
+  margin-right: 0.5rem;
+  border-radius: 3rem;
+}
+
+.invoice_details {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.invoice {
+  width: 100%;
+  height: auto;
+  background-color: rgba(31, 34, 109, 0.267);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  */
+
+.invoice_data {
+  width: 90%;
+  height: max-content;
+  min-height: 27vh;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.back_button {
+  position: absolute;
+  background-color: #40005e;
+  outline: none;
+  border: none;
+  top: -19%;
+  left: -5.5%;
+  cursor: pointer;
+  color: rgb(192, 192, 192);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.label_name_above_value {
+  color: rgb(160, 158, 158);
+  font-weight: 600;
+}
+
+/* ==================================== */
+
+/* First column */
+
+.status_button,
+.clientNameContainer {
+  min-width: 15rem;
+  margin-right: 2rem;
+}
+
+.clientNameContainer > p {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.containerStatusBtn_ClientName {
+  min-height: 20rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerStatusBtn_ClientName > div:not(:last-child) {
+  margin-bottom: 4.5rem;
+}
+
+/* Second column (due to, client mail) */
+
+.paymentTermConta,
+.clientMailContainer {
+  min-width: 25rem;
+}
+
+.cl_mail_value {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.due_to_value {
+  margin-top: 2rem;
+}
+
+.container_PaymentTerm_ClientMail {
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_PaymentTerm_ClientMail > div:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+/* Third column (addresses) */
+
+.userAddress,
+.clientAddressContainer {
+  min-width: 10rem;
+  width: 25rem;
+}
+
+.userAddress > p,
+.clientAddressContainer > p {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.container_UserAddress_ClientAddress {
+  display: flex;
+  flex-direction: column;
+  min-height: 20rem;
+}
+
+.container_UserAddress_ClientAddress > div:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* ==================================== */
+
+/* @media all and (max-width: 1055px) {
+  .container_UserAddress_ClientAddress {
+    display: flex;
+    flex-direction: row;
+  }
+} */
+
+/*  */
+
+.summary {
+  width: 90%;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.item_info {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  text-align: right;
+}
+
+.title_text_form_top {
+  color: rgb(206, 206, 206);
+  font-weight: 300;
+  text-align: left;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  background-color: rgba(14, 16, 77, 0.575);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.values {
+  color: wheat;
+  text-align: right;
+  border-bottom: 2px rgba(0, 0, 0, 0.397) solid;
+}
+
+.values > div,
+.title > div {
+  width: 10rem;
+}
+
+.item_bars_cont {
+  width: inherit;
+  min-height: 4rem;
+  max-height: 12rem;
+  position: relative;
+  overflow-y: scroll;
+  background-color: rgba(31, 34, 109, 0.267);
+}
+
+.item_bars_cont::-webkit-scrollbar {
+  width: 0;
+}
+
+.sum_total {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sum {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-top: 1.3rem;
+  padding-right: 2.5rem;
+}
+
+.total_text {
+  padding-top: 1.3rem;
+  padding-left: 4.7rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.invoice__status {
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+}
+
+.img_near_row {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50;
+  right: -27.8%;
+  z-index: 1;
+  opacity: 0;
+  transition: 300ms ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalJS {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgb(0, 0, 0);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  border: 2px white solid;
+}
+
+.modalJS > p {
+  font-size: 4rem;
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.modalJS > div {
+  font-size: 2rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayJS {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
+.cancelDeletebtn {
+  border: none;
+  color: rgb(206, 201, 201);
+  cursor: pointer;
+  height: 3.5rem;
+  text-align: center;
+  width: 5rem;
+  background-color: red;
+  margin-left: 10rem;
+  border-radius: 1rem;
+}
+
+.cancelDeletebtn:hover,
+.btn_delete_modal:hover {
+  transform: scale(1.05);
+}
+
+.btn_delete_modal {
+  background-color: rgba(255, 102, 0, 0.705);
+  width: 8rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  color: rgb(206, 201, 201);
+  cursor: pointer;
+  height: 3.5rem;
+  text-align: center;
+}

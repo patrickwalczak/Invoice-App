@@ -70,8 +70,6 @@ class App {
       .addEventListener('click', this.clickedNewInvoice.bind(this));
   }
 
-  initItemInputValidation() {}
-
   btnCancelActions(e) {
     e.preventDefault();
 

@@ -50,7 +50,7 @@
     padding-right: 2.5rem;
     margin-top: 2rem;
     height: 100vh;
-    min-width: 40rem;
+    min-width: none;
   }
 
   h1 {

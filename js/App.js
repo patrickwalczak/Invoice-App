@@ -3,10 +3,6 @@ import * as RandomDataArray from './randomData.js';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-const x = 'Test';
-
-const xxx = 'Test2';
-
 class App {
   constructor() {
     this.addedItemsCounter = 1;

@@ -1,6 +1,9 @@
 import * as DomElements from './domElements.js';
+import FormView from './formView.js';
+import InitialView from './initialView.js';
 
-DomElements.filter.addEventListener('click', () => {
-  DomElements.arrow.classList.toggle('down');
-  DomElements.block_below.classList.toggle('hidden');
-});
+function init() {
+  InitialView.turnOnAllEventHandlers();
+}
+
+init();

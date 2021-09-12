@@ -223,7 +223,7 @@ h1 {
 }
 
 .button__add {
-  display: none;
+  display: flex;
   align-self: center;
   justify-self: right;
   align-items: center;

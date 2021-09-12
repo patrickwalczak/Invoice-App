@@ -2,7 +2,7 @@
   "name": "invoice_app",
   "version": "1.0.0",
   "description": "Invoice management tool",
-  "default": "App.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"

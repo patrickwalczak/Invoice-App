@@ -1,4 +1,21 @@
-const form = `
+import * as DomElements from './domElements.js';
+
+class FormView {
+  displayForm() {
+    DomElements.form_container.classList.remove('hidden');
+
+    this.renderFormElement();
+
+    // formElement.querySelector('#street').focus();
+    // formElement.querySelector('#street').scrollIntoView({
+    //   behavior: 'smooth',
+    //   block: 'end',
+    //   inline: 'nearest',
+    // });
+  }
+
+  renderFormElement() {
+    const form = `
 <form id="form_1" autocomplete="off">
             <p class="title_text_form_top">
               Invoice: <span class="invID"></span>
@@ -171,3 +188,7 @@ const form = `
             </div>
           </form>
 `;
+
+    DomElements.form_container.insertAdjacentHTML('afterbegin', form);
+  }
+}

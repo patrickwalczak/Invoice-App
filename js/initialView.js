@@ -77,7 +77,7 @@ class InitialView {
     this.headerText = document.querySelector('.how_many_invoices');
 
     this.centerTextInsideInvoicesContainer =
-      document.querySelector('.centerText');
+      document.querySelector('.center_text');
   }
 
   // This function manages the state of the center text and text below 'U Invoice'
@@ -131,7 +131,7 @@ class InitialView {
   </div>
 
   <div class="invoices__bars"> 
-      <span class='centerText'></span>
+      <span class='center_text'></span>
   <!-- Place for invoice rows -->
   
   </div>`;

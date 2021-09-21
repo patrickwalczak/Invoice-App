@@ -11,15 +11,13 @@ This is a useful tool to manage invoices. There are possibilities to add, edit, 
 In the near future, I will try to:
 
 - add documentation,
-- organize whole architecture based on the Model–view–controller software design pattern, because right now I have one big file and divide into smaller modules will be so much better for adding new features,
-- optimize code, because sometimes my solutions to specific problem are too complicated and some functions can be written with less code,
 - add some functionalities such as change theme button, add third invoice type that will be draft, add some start/welcome page, disabled possibility to edit some information in the invoice which was paid.
 
 Technologies.
 
 I used JavaScript, CSS and HTML. At the moment, to store data, I simply use the LocaleStorage.
 
-Application is fully responsive.
+The application is fully responsive and written using Model-View-Controller architecture.
 
-In the right corner there is a button which adds three invoices. It makes much faster and simpler to check out how application works. 
-  Have fun ;) https://invoice-application.netlify.app/
+In the right corner there is a button which will add four invoices. It makes much faster and simpler to check out how application works.
+Have fun ;) https://invoice-application.netlify.app/

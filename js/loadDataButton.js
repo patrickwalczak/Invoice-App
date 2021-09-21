@@ -7,6 +7,8 @@ class LoadDataButton {
     // If isEmpty = true, then we want to execute other lines in the code
     if (!isEmpty) return;
 
+    console.log(isEmpty);
+
     const markup = this.generateMarkup();
 
     this.parentElement.insertAdjacentHTML('beforeend', markup);

@@ -13,8 +13,6 @@ import loadDataButton from './loadDataButton.js';
 // 1. Functions which will be executed while application will be launched. So called, initialization function and event listeners
 // =================================================
 
-init();
-
 function init() {
   // Display default view of the application. InitialView contains 'U Invoice' text, filter button, 'new invoice' button, container for invoices and load random data.
 
@@ -53,6 +51,8 @@ window.addEventListener('click', e => {
     controlAddingItems
   );
 });
+
+init();
 
 // =================================================
 // =================================================

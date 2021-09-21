@@ -1,4 +1,4 @@
-const obj4 = {
+const invoice_1 = {
   addedItems: 2,
   city: 'London',
   cl_city: 'New Castle',
@@ -30,7 +30,7 @@ const obj4 = {
   total: 3998,
 };
 
-const obj = {
+const invoice_2 = {
   addedItems: 1,
   city: 'London',
   cl_city: 'Washington',
@@ -55,7 +55,7 @@ const obj = {
   total: 8000,
 };
 
-const obj2 = {
+const invoice_3 = {
   addedItems: 1,
   city: 'Washington',
   cl_city: 'London',
@@ -80,4 +80,29 @@ const obj2 = {
   total: 195,
 };
 
-export const randomData = [obj4, obj, obj2];
+const invoice_4 = {
+  addedItems: 1,
+  city: 'Washington',
+  cl_city: 'London',
+  cl_country: 'England',
+  cl_email: 'bob.smith1978@example.com',
+  cl_invoice_date: '29.08.2021',
+  cl_name: 'Bob Smith',
+  cl_post_code: '78-325',
+  cl_street: 'Blue St. 41/5',
+  country: 'USA',
+  id: '#INV99X99',
+  item_name_1: 'Window',
+  item_price_1: '1399',
+  item_quan_1: '9',
+  item_total_1: '12591$',
+  itemsContainer: [['Window', '9', '1399', '12591$']],
+  payment_term: '14',
+  post_code: '91-416',
+  project_descrip: '',
+  status: 'paid',
+  street: 'Churchill St. 37/32',
+  total: 12591,
+};
+
+export const randomData = [invoice_1, invoice_2, invoice_3, invoice_4];

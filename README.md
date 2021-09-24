@@ -2,7 +2,7 @@ This is my first mini project on which I have been working from scratch by mysel
 
 An idea for this application comes from frontendmentor.io
 
-I was looking for a challenging mini project to test my current skills. So, I check out how app should look like and what functionalities should have. I have changed some parts to have more fun.
+I was looking for a challenging mini project to test my current skills. So, I check out how app should look like and what functionalities should have.
 
 About app.
 

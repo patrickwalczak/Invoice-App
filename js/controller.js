@@ -15,6 +15,7 @@ import loadDataButton from './loadDataButton.js';
 
 function init() {
   // Display default view of the application. InitialView contains 'U Invoice' text, filter button, 'new invoice' button, container for invoices and load random data.
+  model.getDataFromLocaleStorage();
 
   initialView.render(
     controlOpeningDetails,
@@ -27,6 +28,12 @@ function init() {
   initialView.addHandlerToNewInvoiceBtn(formView.render.bind(formView));
 
   loadDataButton.render(controlLoadingRandomData, checkIfArrayIsEmpty());
+
+  if (!model.state.invoiceArray.length) return;
+
+  model.state.invoiceArray.forEach(inv =>
+    invoiceShortView.createInvoiceRow(inv)
+  );
 }
 
 window.addEventListener('click', e => {
@@ -232,9 +239,13 @@ function controlSubmitingForm(form_ID, inv_ID, fieldsToCheck) {
 
   model.state.invoiceArray.push(newInvoice);
 
-  invoiceShortView.createInvoiceRow(newInvoice);
+  // invoiceShortView.createInvoiceRow(newInvoice);
 
-  initialView.setHeaderTextValue(model.state.invoiceArray.length);
+  // initialView.setHeaderTextValue(model.state.invoiceArray.length);
+
+  localStorage.setItem('invoices', JSON.stringify(model.state.invoiceArray));
+
+  init();
 
   return true;
 }
@@ -256,11 +267,9 @@ function controlDeleteButton() {
 
   model.state.clickedInvoice = '';
 
-  init();
+  localStorage.setItem('invoices', JSON.stringify(model.state.invoiceArray));
 
-  model.state.invoiceArray.forEach(inv => {
-    invoiceShortView.createInvoiceRow(inv);
-  });
+  init();
 
   initialView.setHeaderTextValue(model.state.invoiceArray.length);
 }
@@ -286,10 +295,6 @@ function controlBackButton() {
   model.cancelSubmitFormResetState();
 
   init();
-
-  model.state.invoiceArray.forEach(inv => {
-    invoiceShortView.createInvoiceRow(inv);
-  });
 
   model.state.clickedInvoice = '';
 }
@@ -337,6 +342,8 @@ function controlSubmitingEditedInvoice(form_ID, inv_ID, fieldsToCheck) {
   model.state.clickedInvoice = newInvoice;
 
   controlOpeningDetails(newInvoice.id);
+
+  localStorage.setItem('invoices', JSON.stringify(model.state.invoiceArray));
 
   return true;
 }

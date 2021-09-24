@@ -185,10 +185,6 @@
     border-radius: 0.5rem;
   }
 
-  /* ==================================== */
-
-  /* First column */
-
   .status_button,
   .clientNameContainer {
     margin-right: 1rem;
@@ -225,8 +221,6 @@
   .containerStatusBtn_ClientName > div:not(:last-child) {
     margin-bottom: 1rem;
   }
-
-  /* Second column (due to, client mail) */
 
   .paymentTermConta,
   .clientMailContainer {

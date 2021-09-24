@@ -4,7 +4,9 @@ class LoadDataButton {
   render(loadDataBtnHandler, isEmpty) {
     this.parentElement = document.querySelector('.container');
 
-    // If isEmpty = true, then we want to execute other lines in the code
+    if (!isEmpty && document.querySelector('.loadData'))
+      return document.querySelector('.loadData').remove();
+
     if (!isEmpty) return;
 
     console.log(isEmpty);

@@ -10,6 +10,14 @@ export const state = {
   clickedInvoice: '',
 };
 
+export function getDataFromLocaleStorage() {
+  const x = JSON.parse(localStorage.getItem('invoices'));
+
+  if (!x) return;
+
+  state.invoiceArray = x;
+}
+
 export function checkIfValid(elIdtoCheck) {
   const formElToVerify = document.querySelector(`#${elIdtoCheck}`);
 
@@ -188,6 +196,8 @@ export function addedItemsDataValidation() {
 
 export function addRandomData() {
   state.invoiceArray.push(...randomData);
+
+  localStorage.setItem('invoices', JSON.stringify(state.invoiceArray));
 }
 
 export function calcPaymentTerm(invoice) {

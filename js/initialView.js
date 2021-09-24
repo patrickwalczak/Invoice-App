@@ -82,7 +82,7 @@ class InitialView {
 
   // This function manages the state of the center text and text below 'U Invoice'
   setHeaderTextValue(amountOfInvoices = 0) {
-    if (amountOfInvoices === 0 || amountOfInvoices === []) {
+    if (!amountOfInvoices) {
       this.headerText.innerHTML = '';
       this.centerTextInsideInvoicesContainer.innerHTML =
         "You haven't added any invoice yet.";

@@ -21,8 +21,6 @@ body {
   display: flex;
   flex-direction: row;
   color: white;
-  /* background-color: rgb(11, 11, 49); */
-  /* background-color without blue light filtr */
   background-color: rgb(20, 22, 37);
 }
 
@@ -30,7 +28,6 @@ body {
   width: 10rem;
   min-width: 10rem;
   max-width: 10rem;
-  /* background-color: rgb(24, 24, 87); */
   background-color: rgba(31, 34, 109, 0.267);
   min-height: 100vh;
   position: relative;
@@ -115,13 +112,8 @@ h1 {
     rgb(181, 75, 223) 0%,
     rgb(135, 82, 160) 30%
   );
-
-  /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;

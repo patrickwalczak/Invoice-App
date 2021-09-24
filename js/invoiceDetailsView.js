@@ -54,7 +54,7 @@ class InvoiceDetailsView {
   }
 
   markButtonActions() {
-    this.markButton.innerHTML = 'Has already paid';
+    this.markButton.innerHTML = 'Paid';
     this.invoiceStatus.classList.remove('pending');
     this.invoiceStatus.classList.add('paid');
     this.invoiceStatus.innerHTML = '<span class="dot"></span> Paid';
@@ -92,9 +92,7 @@ class InvoiceDetailsView {
               <button class="btn_res btn_edit">Edit</button>
               <button class="btn_res btn_delete">Delete</button>
               <button class="btn_res btn_mark">${
-                invoice.status === 'pending'
-                  ? 'Mark as Paid'
-                  : 'Has already paid'
+                invoice.status === 'pending' ? 'Mark as Paid' : 'Paid'
               }</button>
             </div>
           </div>

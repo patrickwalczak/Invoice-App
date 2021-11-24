@@ -20,4 +20,4 @@ I used JavaScript, CSS and HTML. At the moment, to store data, I simply use the 
 The application is fully responsive and written using Model-View-Controller architecture.
 
 In the right corner there is a button which will add four invoices. It makes much faster and simpler to check out how application works.
-Have fun ;) https://invoice-application.netlify.app/
+Have fun ;) invoice-application.netlify.app/

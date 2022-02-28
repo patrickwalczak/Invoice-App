@@ -1,4 +1,4 @@
-This is my first mini project on which I have been working from scratch by myself.
+This is my first mini project on which I have been working from scratch on my own.
 
 An idea for this application comes from frontendmentor.io
 
@@ -6,12 +6,7 @@ I was looking for a challenging mini project to test my current skills. So, I ch
 
 About app.
 
-This is a useful tool to manage invoices. There are possibilities to add, edit, change status, sort and delete invoice.
-
-In the near future, I will try to:
-
-- add documentation,
-- add some functionalities such as change theme button, add third invoice type that will be draft, add some start/welcome page, disabled possibility to edit some information in the invoice which was paid.
+This is a tool to manage invoices. There are possibilities to add, edit, change status, sort and delete invoice.
 
 Technologies.
 
